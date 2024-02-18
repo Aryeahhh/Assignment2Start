@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 5-px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input[type="number"] {
+    width: 30%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
