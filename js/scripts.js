@@ -1,8 +1,9 @@
 // function to change custom color
 function changeCustomColor(input) {
+    //adding studentID
     let pTag = document.getElementById('myStudentId');
     pTag.innerText = 'Student ID - 1217030';
-
+    //deciding color based on inpu
     let color;
     if (input < 0 || input > 100) {
         color = 'red';
@@ -17,12 +18,13 @@ function changeCustomColor(input) {
     } else {
         color = 'yellow';
     }
-
+    //changing bg color
     document.body.style.backgroundColor = color;
 }
 
 // function to change random color
 function changeRandomColor() {
+    //using randomfunction to get a random number between 1 and 100
     let randomInput = Math.floor(Math.random() * 100) + 1;
     changeCustomColor(randomInput);
 }
@@ -31,7 +33,7 @@ function changeRandomColor() {
 function addList() {
     let selectList = document.getElementById('imageSelect');
     let images = ['img1','img2','img3','img4','img5']; 
-
+    //iterating through my images array 
     for (let i = 0; i < images.length; i++) {
         let option = document.createElement('option');
         option.value = images[i];
@@ -48,11 +50,11 @@ function changeImage() {
     img.alt = image;
 }
 
-// event listeners for on click event of buttons and select
+//some important variables
 let customColor = document.querySelector('.custColor');
 let randomColor = document.querySelector('.randColor');
 let selectList = document.getElementById('imageSelect');
-
+// event listeners for on click event of buttons and select
 customColor.addEventListener('click', function () {
     let customNumber = document.getElementById('customNumber');
     changeCustomColor(customNumber.value);
